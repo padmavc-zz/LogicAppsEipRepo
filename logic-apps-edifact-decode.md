@@ -9,7 +9,7 @@ Validates EDI and partner specific properties
 * An Azure account; you can create a [free account](https://azure.microsoft.com/free)
 * An integration account is required to use Decode EDIFACT message connector. See details on how to create an [integration account](https://azure.microsoft.com/en-us/documentation/articles/app-service-logic-enterprise-integration-accounts/), add [partners](https://azure.microsoft.com/en-us/documentation/articles/app-service-logic-enterprise-integration-partners/) and [EDIFACT agreement](https://azure.microsoft.com/en-us/documentation/articles/app-service-logic-enterprise-integration-edifact/) to it.
 
-Connect to Decode EDIFACT Message using the following steps:
+###Connect to Decode EDIFACT Message using the following steps:
 
 1. Create a Logic App.  [Create a logic app](https://azure.microsoft.com/en-us/documentation/articles/app-service-logic-create-a-logic-app/) provides an example.
 
@@ -19,13 +19,13 @@ Connect to Decode EDIFACT Message using the following steps:
 
 4. Enter the integration account details.  Properties with an asterisk are required
 
-| Property	  				| Details 							      |
+| Property | Details |
 
-| ---------------------		| -------------------------------------- |
+| ---------------------	| -------------------------------------- |
 
-| Connection Name * 		| Enter any name for your connection 	  |
+| Connection Name * | Enter any name for your connection |
 
-| Integration Account * 	| Enter the integration account name; Be sure your integration account and Logic app are in the same Azure location |
+| Integration Account * | Enter the integration account name; Be sure your integration account and Logic app are in the same Azure location |
 
 Once complete, your coonection details look similar to the following
 
