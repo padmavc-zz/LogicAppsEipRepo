@@ -29,9 +29,9 @@ Validates EDI and partner specific properties, generates XML document for each t
 
 ###Connect to Decode EDIFACT Message using the following steps:
 
-1. Create a Logic App.  [Create a logic app](https://azure.microsoft.com/en-us/documentation/articles/app-service-logic-create-a-logic-app/) provides an example.
+1. Create a Logic App.  [Create a Logic App](https://azure.microsoft.com/en-us/documentation/articles/app-service-logic-create-a-logic-app/) provides an example.
 
-2. This connector does not have any triggers. Use other triggers to start the logic app, such as a Request trigger.  In the Logic App designer, add a trigger and add an action.  Select Show Microsoft managed APIs in the drop down list and then enter “edifact” in the search box.  Select Decode EDIFACT Message
+2. This connector does not have any triggers. Use other triggers to start the Logic App, such as a Request trigger.  In the Logic App designer, add a trigger and add an action.  Select Show Microsoft managed APIs in the drop down list and then enter “edifact” in the search box.  Select Decode EDIFACT Message
 
 	![](./media/app-service-logic-enterprise-integration-edifactorconnector/edifactdecodeimage1.png)
 	
@@ -46,7 +46,7 @@ Validates EDI and partner specific properties, generates XML document for each t
 	| Connection Name * | Enter any name for your connection |
 	| Integration Account * | Enter the integration account name; Be sure your integration account and Logic app are in the same Azure location |
 
-	Once complete, your coonection details look similar to the following
+	Once complete, your connection details look similar to the following
 
 	![](./media/app-service-logic-enterprise-integration-edifactorconnector/edifactdecodeimage3.png)  
 
