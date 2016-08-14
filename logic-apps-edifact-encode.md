@@ -49,25 +49,25 @@ Validates EDI and partner specific properties
 	Once complete, your coonection details look similar to the following
 
 	![](./media/app-service-logic-enterprise-integration-edifactorconnector\edifactencodeimage2.png)
-
+	
 5. Select Create.
 	
 6. Notice the connection has been created
 
 	![](./media/app-service-logic-enterprise-integration-edifactorconnector\edifactencodeimage4.png)
-
+	
 #### Encode EDIFACT Message by agreement name
 
 7.	Provide EDIFACT agreement name and xml message to encode.
 
 	![](./media/app-service-logic-enterprise-integration-edifactorconnector\edifactencodeimage6.png)
-
+	
 #### Encode EDIFACT Message by identities
 
 8. Provide sender identifier, sender qualifier, receiver identifier and receiver qualifier as configured in the X12 agreement.  Select xml message to encode
 
 	![](./media/app-service-logic-enterprise-integration-edifactorconnector\edifactencodeimage7.png)
-
+	
 ## X12 Encode does following
 
 * Resolve the agreement by matching the sender qualifier and identifier, and the receiver qualifier and identifier, in the interchange header with those in the properties of an agreement.
