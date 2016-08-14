@@ -41,12 +41,12 @@ Connect to Applicability Statement 2 (AS2) - Encode AS2 Message to establish sec
 
 4. Enter the integration account details.  Properties with an asterisk are required
 
- 	| Property | Details |
-	| -------- | ------- |
-	 | Connection Name * | Enter any name for your connection |
-	 | Integration Account * | Enter the integration account name; Be sure your integration account and Logic app are in the same Azure location |
+	| Property   | Details |
+	| --------   | ------- |
+	| Connection Name *    | Enter any name for your connection |
+	| Integration Account * | Enter the integration account name; Be sure your integration account and Logic app are in the same Azure location |
 
- Once complete, your coonection details look similar to the following
+  Once complete, your coonection details look similar to the following
 
   ![](./media/app-service-logic-enterprise-integration-AS2connector/as2encodeimage2.png)  
 
