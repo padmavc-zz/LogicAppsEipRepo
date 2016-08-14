@@ -63,7 +63,6 @@ Validates EDI and partner specific properties, generates XML document for each t
 ## EDIFACT Decode does following
 
 * Resolve the agreement by matching the sender qualifier and identifier, and the receiver qualifier and identifier, in the interchange header with those in the properties of an agreement.
-
 * Splits multiple interchanges in a single message into separate.
 * Validates the envelope.
 * Disassembles the interchange.
