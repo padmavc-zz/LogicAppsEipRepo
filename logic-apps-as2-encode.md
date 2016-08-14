@@ -14,10 +14,12 @@ Connect to Applicability Statement 2 (AS2) - Encode AS2 Message to establish sec
 1. Create a Logic App.  [Create a logic app](https://azure.microsoft.com/en-us/documentation/articles/app-service-logic-create-a-logic-app/) provides an example
 
 2. This connector does not have any triggers. Use other triggers to start the logic app, such as a Request trigger.  In the Logic App designer, add a trigger and add an action.  Select Show Microsoft managed APIs in the drop down list and then enter “AS2” in the search box.  Select AS2 – Encode AS2 Message
- 
-3. If you haven’t previously created any connections to Integration account, you are prompted for the connection details
+![](./media/app-service-logic-enterprise-integration-AS2connector/as2decodeimage1.png")
 
- 4. Enter the integration account details.  Properties with an asterisk are required
+3. If you haven’t previously created any connections to Integration account, you are prompted for the connection details
+![](./media/app-service-logic-enterprise-integration-AS2connector/as2encodeimage1.png")  
+
+4. Enter the integration account details.  Properties with an asterisk are required
 
  	| Property | Details |
 	| -------- | ------- |
@@ -27,11 +29,11 @@ Connect to Applicability Statement 2 (AS2) - Encode AS2 Message to establish sec
 Once complete, your coonection details look similar to the following
 
 5. Select Create
+![](./media/app-service-logic-enterprise-integration-AS2connector/as2encodeimage2.png")  
 
-6. Notice the connection has been created.  Now, proceed with the other steps in your Logic App
+6. Notice the connection has been created.  Provide AS2-From identifier, AS2-To identifier and Body details
+![](./media/app-service-logic-enterprise-integration-AS2connector/as2encodeimage3.png") 
  
-7. Provide AS2-From identifier, AS2-To identifier and Body details.
-
 
 ## The AS2 Encode does the following
 
