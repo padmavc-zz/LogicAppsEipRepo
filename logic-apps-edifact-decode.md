@@ -1,6 +1,24 @@
+<properties 
+	pageTitle="Learn about Enterprise Integration Pack Decode EDIFACT Message Connctor | Microsoft Azure App Service | Microsoft Azure" 
+	description="Learn how to use partners with the Enterprise Integration Pack and Logic apps" 
+	services="logic-apps" 
+	documentationCenter=".net,nodejs,java"
+	authors="padmavc" 
+	manager="erikre" 
+	editor=""/>
+
+<tags 
+	ms.service="logic-apps" 
+	ms.workload="integration" 
+	ms.tgt_pltfrm="na" 
+	ms.devlang="na" 
+	ms.topic="article" 
+	ms.date="08/15/2016" 
+	ms.author="padmavc"/>
+
 # Get started with Decode EDIFACT Message
 
-Validates EDI and partner specific properties 
+Validates EDI and partner specific properties, generates XML document for each transaction set and generates acknowledgment for processed transaction.
 
 ## Create the connection
 
@@ -15,26 +33,32 @@ Validates EDI and partner specific properties
 
 2. This connector does not have any triggers. Use other triggers to start the logic app, such as a Request trigger.  In the Logic App designer, add a trigger and add an action.  Select Show Microsoft managed APIs in the drop down list and then enter “edifact” in the search box.  Select Decode EDIFACT Message
 
+	![](./media/app-service-logic-enterprise-integration-edifactorconnector\edifactdecodeimage1.png)  
+
 3. If you haven’t previously created any connections to Integration account, you are prompted for the connection details
+
+	![](./media/app-service-logic-enterprise-integration-edifactorconnector\edifactdecodeimage2.png)  
 
 4. Enter the integration account details.  Properties with an asterisk are required
 
-| Property | Details |
+	| Property | Details |
+	| -------- | ------- |
+	| Connection Name * | Enter any name for your connection |
+	| Integration Account * | Enter the integration account name; Be sure your integration account and Logic app are in the same Azure location |
 
-| ---------------------	| -------------------------------------- |
+	Once complete, your coonection details look similar to the following
 
-| Connection Name * | Enter any name for your connection |
-
-| Integration Account * | Enter the integration account name; Be sure your integration account and Logic app are in the same Azure location |
-
-Once complete, your coonection details look similar to the following
+	![](./media/app-service-logic-enterprise-integration-edifactorconnector\edifactdecodeimage3.png)  
 
 5. Select Create.
 
 6. Notice the connection has been created.
 
+	![](./media/app-service-logic-enterprise-integration-edifactorconnector\edifactdecodeimage5.png)  
+
 7. Select EDIFACT flat file message to decode
 
+	![](./media/app-service-logic-enterprise-integration-edifactorconnector\edifactdecodeimage5.png)  
 
 ## EDIFACT Decode does following
 

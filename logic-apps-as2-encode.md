@@ -15,6 +15,7 @@
 	ms.topic="article" 
 	ms.date="08/15/2016" 
 	ms.author="padmavc"/>
+
 # Get started with Encode AS2 Message
 
 Connect to Applicability Statement 2 (AS2) - Encode AS2 Message to establish security and reliability when transmitting B2B messages over HTTP/S. It provides digital signing and encryption as well as acknowledgements via Message Disposition Notifications (MDN), which also leads to support for Non-Repudiation (NRR).
@@ -31,10 +32,12 @@ Connect to Applicability Statement 2 (AS2) - Encode AS2 Message to establish sec
 1. Create a Logic App.  [Create a logic app](https://azure.microsoft.com/en-us/documentation/articles/app-service-logic-create-a-logic-app/) provides an example
 
 2. This connector does not have any triggers. Use other triggers to start the logic app, such as a Request trigger.  In the Logic App designer, add a trigger and add an action.  Select Show Microsoft managed APIs in the drop down list and then enter “AS2” in the search box.  Select AS2 – Encode AS2 Message
-![](./media/app-service-logic-enterprise-integration-AS2connector/as2decodeimage1.png")
+
+	![](./media/app-service-logic-enterprise-integration-AS2connector/as2decodeimage1.png)
 
 3. If you haven’t previously created any connections to Integration account, you are prompted for the connection details
-![](./media/app-service-logic-enterprise-integration-AS2connector/as2encodeimage1.png")  
+	
+	![](./media/app-service-logic-enterprise-integration-AS2connector/as2encodeimage1.png)  
 
 4. Enter the integration account details.  Properties with an asterisk are required
 
@@ -43,13 +46,15 @@ Connect to Applicability Statement 2 (AS2) - Encode AS2 Message to establish sec
 	 | Connection Name * | Enter any name for your connection |
 	 | Integration Account * | Enter the integration account name; Be sure your integration account and Logic app are in the same Azure location |
 
-Once complete, your coonection details look similar to the following
+ Once complete, your coonection details look similar to the following
 
-5. Select Create
-![](./media/app-service-logic-enterprise-integration-AS2connector/as2encodeimage2.png")  
+  ![](./media/app-service-logic-enterprise-integration-AS2connector/as2encodeimage2.png)  
+
+5. Select Create  
 
 6. Notice the connection has been created.  Provide AS2-From identifier, AS2-To identifier and Body details
-![](./media/app-service-logic-enterprise-integration-AS2connector/as2encodeimage3.png") 
+
+	![](./media/app-service-logic-enterprise-integration-AS2connector/as2encodeimage3.png) 
  
 
 ## The AS2 Encode does the following
