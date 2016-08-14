@@ -1,3 +1,20 @@
+<properties 
+	pageTitle="Learn about Enterprise Integration Pack Encode AS2 Message Connctor | Microsoft Azure App Service | Microsoft Azure" 
+	description="Learn how to use partners with the Enterprise Integration Pack and Logic apps" 
+	services="logic-apps" 
+	documentationCenter=".net,nodejs,java"
+	authors="padmavc" 
+	manager="erikre" 
+	editor=""/>
+
+<tags 
+	ms.service="logic-apps" 
+	ms.workload="integration" 
+	ms.tgt_pltfrm="na" 
+	ms.devlang="na" 
+	ms.topic="article" 
+	ms.date="08/15/2016" 
+	ms.author="padmavc"/>
 # Get started with Encode AS2 Message
 
 Connect to Applicability Statement 2 (AS2) - Encode AS2 Message to establish security and reliability when transmitting B2B messages over HTTP/S. It provides digital signing and encryption as well as acknowledgements via Message Disposition Notifications (MDN), which also leads to support for Non-Repudiation (NRR).
