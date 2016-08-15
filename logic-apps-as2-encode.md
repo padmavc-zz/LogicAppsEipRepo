@@ -63,6 +63,4 @@ Connect to Applicability Statement 2 (AS2) - Encode AS2 Message to establish sec
 * Signs outgoing messages, if enabled
 * Encrypts outgoing messages, if enabled (for EDI/AS2, not MDN)
 * Compresses the message, if enabled (for EDI/AS2, not MDN)
-* Stores the payload in wire format if the NRR enabled for outbound decoded AS2 messages property is selected, and stores the message in wire format if the NRR enabled for outbound encoded AS2 messages property is selected
-* Computes the MIC value and stores
-* Updates and correlates records if user select NRR in AS2 agreement
+

@@ -18,7 +18,7 @@
 
 # Get started with Decode AS2 Message
 
-Connect to Applicability Statement 2 (AS2) - Decode AS2 Message to establish security and reliability while transmitting messages. It provides digital signing and encryption as well as acknowledgements via Message Disposition Notifications (MDN), which also leads to support for Non-Repudiation.
+Connect to Applicability Statement 2 (AS2) - Decode AS2 Message to establish security and reliability while transmitting messages. It provides digital signing and decryption as well as acknowledgements via Message Disposition Notifications (MDN).
 
 ## Create the connection
 
