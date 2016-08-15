@@ -25,7 +25,8 @@ Validates EDI and partner specific properties
 ### Prerequisites
 
 * An Azure account; you can create a [free account](https://azure.microsoft.com/free)
-* An integration account is required to use Decode EDIFACT message connector. See details on how to create an [integration account](https://azure.microsoft.com/en-us/documentation/articles/app-service-logic-enterprise-integration-accounts/), add [partners](https://azure.microsoft.com/en-us/documentation/articles/app-service-logic-enterprise-integration-partners/) and [EDIFACT agreement](https://azure.microsoft.com/en-us/documentation/articles/app-service-logic-enterprise-integration-edifact/) to it.
+
+* An Integration Account is required to use Decode EDIFACT message connector. See details on how to create an [Integration Account](https://azure.microsoft.com/en-us/documentation/articles/app-service-logic-enterprise-integration-accounts/), add [partners](https://azure.microsoft.com/en-us/documentation/articles/app-service-logic-enterprise-integration-partners/) and [EDIFACT agreement](https://azure.microsoft.com/en-us/documentation/articles/app-service-logic-enterprise-integration-edifact/) to it.
 
 ### Connect to Decode EDIFACT Message using the following steps:
 
@@ -35,16 +36,16 @@ Validates EDI and partner specific properties
 
 	![](./media/app-service-logic-enterprise-integration-edifactorconnector/edifactdecodeimage1.png)  
 
-3. If you haven’t previously created any connections to Integration account, you are prompted for the connection details
+3. If you haven’t previously created any connections to Integration Account, you are prompted for the connection details
 
 	![](./media/app-service-logic-enterprise-integration-edifactorconnector/edifactencodeimage1.png)  
 
-4. Enter the integration account details.  Properties with an asterisk are required
+4. Enter the Integration account details.  Properties with an asterisk are required
 
 	| Property | Details |
 	| -------- | ------- |
 	| Connection Name * | Enter any name for your connection |
-	| Integration Account * | Enter the integration account name; Be sure your integration account and Logic app are in the same Azure location 
+	| Integration Account * | Enter the Integration Account name; Be sure your Integration Account and Logic app are in the same Azure location 
 
 	Once complete, your connection details look similar to the following
 

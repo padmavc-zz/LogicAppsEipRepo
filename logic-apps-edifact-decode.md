@@ -25,7 +25,8 @@ Validates EDI and partner specific properties, generates XML document for each t
 ### Prerequisites
 
 * An Azure account; you can create a [free account](https://azure.microsoft.com/free)
-* An integration account is required to use Decode EDIFACT message connector. See details on how to create an [integration account](https://azure.microsoft.com/en-us/documentation/articles/app-service-logic-enterprise-integration-accounts/), add [partners](https://azure.microsoft.com/en-us/documentation/articles/app-service-logic-enterprise-integration-partners/) and [EDIFACT agreement](https://azure.microsoft.com/en-us/documentation/articles/app-service-logic-enterprise-integration-edifact/) to it.
+
+* An Integration Account is required to use Decode EDIFACT message connector. See details on how to create an [Integration Account](https://azure.microsoft.com/en-us/documentation/articles/app-service-logic-enterprise-integration-accounts/), add [partners](https://azure.microsoft.com/en-us/documentation/articles/app-service-logic-enterprise-integration-partners/) and [EDIFACT agreement](https://azure.microsoft.com/en-us/documentation/articles/app-service-logic-enterprise-integration-edifact/) to it.
 
 ###Connect to Decode EDIFACT Message using the following steps:
 
@@ -35,16 +36,16 @@ Validates EDI and partner specific properties, generates XML document for each t
 
 	![](./media/app-service-logic-enterprise-integration-edifactorconnector/edifactdecodeimage1.png)
 	
-3. If you haven’t previously created any connections to Integration account, you are prompted for the connection details
+3. If you haven’t previously created any connections to Integration Account, you are prompted for the connection details
 
 	![](./media/app-service-logic-enterprise-integration-edifactorconnector/edifactdecodeimage2.png)  
 
-4. Enter the integration account details.  Properties with an asterisk are required
+4. Enter the Integration Account details.  Properties with an asterisk are required
 
 	| Property | Details |
 	| -------- | ------- |
 	| Connection Name * | Enter any name for your connection |
-	| Integration Account * | Enter the integration account name; Be sure your integration account and Logic app are in the same Azure location |
+	| Integration Account * | Enter the Integration Account name; Be sure your Integration Account and Logic app are in the same Azure location |
 
 	Once complete, your connection details look similar to the following
 
@@ -62,14 +63,12 @@ Validates EDI and partner specific properties, generates XML document for each t
 
 ## EDIFACT Decode does following
 
-* Resolve the agreement by matching the sender qualifier and identifier, and the receiver qualifier and identifier, in the interchange header with those in the properties of an agreement.
+* Resolve the agreement by matching the sender qualifier & identifier, and the receiver qualifier & identifier, in the interchange header with those in the properties of an agreement.
 * Splits multiple interchanges in a single message into separate.
-* Validates the envelope.
+* Validates the envelope against trading partner agreement
 * Disassembles the interchange.
 * Validates EDI and partner-specific properties. This includes 
-	* EDI schema validation
 	* Validation of the structure of the interchange envelope.
-	* Validation of the envelope against trading partner agreement 
 	* Schema validation of the envelope against the control schema.
 	* Schema validation of the transaction-set data elements against the message schema.
 	* EDI validation performed on transaction-set data elements. This is performed if enabled in the agreement properties.

@@ -26,7 +26,7 @@ Validates EDI and partner specific properties, generates XML document for each t
 
 * An Azure account; you can create a [free account](https://azure.microsoft.com/free)
 
-* An integration account is required to use Encode AS2 message connector. See details on how to create an [integration account](https://azure.microsoft.com/en-us/documentation/articles/app-service-logic-enterprise-integration-accounts/), add [partners](https://azure.microsoft.com/en-us/documentation/articles/app-service-logic-enterprise-integration-partners/) and [AS2 agreement](https://azure.microsoft.com/en-us/documentation/articles/app-service-logic-enterprise-integration-x12/) to it
+* An Integration Account is required to use Encode AS2 message connector. See details on how to create an [Integration Account](https://azure.microsoft.com/en-us/documentation/articles/app-service-logic-enterprise-integration-accounts/), add [partners](https://azure.microsoft.com/en-us/documentation/articles/app-service-logic-enterprise-integration-partners/) and [AS2 agreement](https://azure.microsoft.com/en-us/documentation/articles/app-service-logic-enterprise-integration-x12/) to it
 
 ### Connect to Decode X12 Message using the following steps:
 
@@ -36,16 +36,16 @@ Validates EDI and partner specific properties, generates XML document for each t
 
 	![](./media/app-service-logic-enterprise-integration-x12connector/x12decodeimage1.png)  
 
-3. If you haven’t previously created any connections to Integration account, you are prompted for the connection details
+3. If you haven’t previously created any connections to Integration Account, you are prompted for the connection details
 
 	![](./media/app-service-logic-enterprise-integration-x12connector/x12decodeimage4.png) 	
 
-4. Enter the integration account details.  Properties with an asterisk are required
+4. Enter the Integration Account details.  Properties with an asterisk are required
 
 	| Property | Details |
 	| -------- | ------- |
 	| Connection Name * | Enter any name for your connection |
-	| Integration Account * | Enter the integration account name; Be sure your integration account and Logic app are in the same Azure location |
+	| Integration Account * | Enter the Integration Account name; Be sure your Integration Account and Logic app are in the same Azure location |
 
 	Once complete, your connection details look similar to the following
 	
@@ -63,12 +63,11 @@ Validates EDI and partner specific properties, generates XML document for each t
 
 ## X12 Decode does following
 
-* Validates the envelope.
-* Disassembles the interchange.
+* Validates the envelope against trading partner agreement
+* Generates an XML document for each transaction set.
 * Validates EDI and partner-specific properties. This includes
 	* EDI structural validation, and extended schema validation
 	* Validation of the structure of the interchange envelope.
-	* Validation of the envelope against trading partner agreement
 	* Schema validation of the envelope against the control schema.
 	* Schema validation of the transaction-set data elements against the message schema.
 	* Validation of the types of transaction sets within a single group based on the transaction set -group mapping provided by X12 standards.
@@ -77,7 +76,6 @@ Validates EDI and partner specific properties, generates XML document for each t
 	* Checks the interchange control number against previously received interchanges.
 	* Checks the group control number against other group control numbers in the interchange.
 	* Checks the transaction set control number against other transaction set control numbers in that group.
-* Generates an XML document for each transaction set.
 * Converts the entire interchange to XML if the X12 agreement receive settings configured to one of the Preserve Interchange.
 	* Split Interchange as transaction sets - suspend transaction sets on error: Parses each transaction set in an interchange into a separate XML document. If one or more transaction sets in the interchange fail validation, then X12 Decode suspends only those transaction sets.
 	* Split Interchange as transaction sets - suspend interchange on error: Parses each transaction set in an interchange into a separate XML document.  If one or more transaction sets in the interchange fail validation, then X12 Decode suspends the entire interchange.
