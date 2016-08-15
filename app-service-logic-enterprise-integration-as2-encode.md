@@ -26,7 +26,7 @@ Connect to Applicability Statement 2 (AS2) - Encode AS2 Message to establish sec
 
 * An Azure account; you can create a [free account](https://azure.microsoft.com/free)
 
-* An Integration Account is required to use Encode AS2 message connector. See details on how to create an [Integration Account](https://azure.microsoft.com/en-us/documentation/articles/app-service-logic-enterprise-integration-accounts/), add [partners](https://azure.microsoft.com/en-us/documentation/articles/app-service-logic-enterprise-integration-partners/) and an [AS2 agreement](https://azure.microsoft.com/en-us/documentation/articles/app-service-logic-enterprise-integration-as2/) to it.
+* An Integration Account is required to use Encode AS2 message connector. See details on how to create an [Integration Account](https://azure.microsoft.com/en-us/documentation/articles/app-service-logic-enterprise-integration-accounts/), [partners](https://azure.microsoft.com/en-us/documentation/articles/app-service-logic-enterprise-integration-partners/) and an [AS2 agreement](https://azure.microsoft.com/en-us/documentation/articles/app-service-logic-enterprise-integration-as2/) to it.
 
 ### Connect to Encode AS2 Message using the following steps:
 
